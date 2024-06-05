@@ -3,12 +3,11 @@ import { useState } from 'react'
 import {getCountries} from "../apis/getCountries"
 import { useEffect } from 'react'
 import Card from '../components/Card'
-import { Container } from 'postcss'
 
 
 export default function Home() {
 
-     const [countriesList, setCountriesList] = useState([])
+const [countriesList, setCountriesList] = useState([])
 
   useEffect(()=>{
     getCountries().then((res)=> {
@@ -35,7 +34,7 @@ export default function Home() {
   }
   return (
     <div>
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-3 gap-4">
       <CardList/>
     </div>
     </div>

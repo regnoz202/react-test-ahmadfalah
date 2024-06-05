@@ -9,6 +9,7 @@ export default function Card(props) {
     setModal(!modal)
   }
 
+  
   return (
     <>
     {modal && (
