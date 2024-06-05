@@ -36,7 +36,7 @@ export default function Card(props) {
   </div>
   )}
 
-  <div className="shadow-xl card card-compact w-96 bg-base-200">
+  <div className="shadow-xl card card-compact w-96 bg-base-100">
   <figure><img src={props.flag} alt="Flag" /></figure>
   <div className="card-body">
     <h2 className="card-title">{props.name}</h2>
